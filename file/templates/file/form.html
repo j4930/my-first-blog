@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+  <head>
+     <meta charset = "UTF-8">
+     <title>Insert title here</title>
+  </head>
+  <body>
+     <form method = "POST" action = "../upload/" enctype = "multipart/form-data" >{% csrf_token %}
+           <!--input type = "hidden" value = "4 * 1024 * 1024 * 1024" name = MAX_FILE_SIZE > </input-->
+           <input type = "file" name = "file"></input>
+           <input type = "submit" value = "보내기"> </input>
+     </form>
+  </body>
+</html>
